@@ -34,7 +34,7 @@ public class Main {
             }
         }
 
-        System.out.println("Головний потік завершено");
+        System.out.println("Главный поток завершен");
     }
 }
 
@@ -44,7 +44,7 @@ public class Main {
  */
 class ExtendingThread extends Thread {
     public void run() {
-        System.out.println("Привіт! Я потік успадкований від класу Thread");
+        System.out.println("Я поток унаследован от класса Thread");
         try {
             //Поток засыпает на 5000 мс = 5 сек
             Thread.sleep(5000);
@@ -60,7 +60,7 @@ class ExtendingThread extends Thread {
  */
 class ImplementingThread implements Runnable {
     public void run() {
-        System.out.println("Привіт! Я потік який імплементує інтерфейс Runnable");
+        System.out.println("Я поток имплементирующий интерфейс Runnable");
         try {
             //Засыпаем на 10 сек
             Thread.sleep(10000);
